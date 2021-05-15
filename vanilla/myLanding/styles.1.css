@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: black;
+  font-family: sans-serif;
+  color: white;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background: url("./asset/bk color.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#logo {
+  width: 254px;
+  height: 51px;
+  object-fit: contain;
+}
+
+#humen {
+  width: 500px;
+  height: 800px;
+  object-fit: contain;
+}
+
+#icon {
+  width: 100px;
+  object-fit: contain;
+}

@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("asset/shutterstock_615829181.png");
+  color: white;
+  background-size: 100vw 100vh;
+  height: 100vh;
+  background-repeat: no-repeat;
+  z-index: -5;
+  object-fit: cover;
+}
+
+#container {
+  position: absolute;
+  background: url("./asset/bk color.png");
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+#icon {
+  width: 100px;
+  height: 264px;
+
+  object-fit: contain;
+  position: relative;
+  right: 5rem;
+  /* background-color: red; */
+  width: 100%;
+  /* top: 2rem; */
+  opacity: 0.6;
+}
+
+#rest2 {
+  display: flex;
+  flex-direction: column;
+  /* width: 700px; */
+  height: 100%;
+  /* background-color: transparent; */
+  /* z-index: -5; */
+}
+
+#Line_shine {
+  object-fit: contain;
+  z-index: -15;
+  width: 400px;
+  position: relative;
+  right: 5rem;
+}
+
+#btn_copy {
+  object-fit: contain;
+  position: relative;
+  right: 5rem;
+}
+
+#subtitle {
+  margin-top: 2rem;
+  width: 410px;
+  height: 90px;
+  text-align: center;
+  margin: 0 auto;
+  z-index: 10;
+  object-fit: contain;
+  position: relative;
+  right: 5rem;
+}
+
+#title {
+  width: 481px;
+  height: 41px;
+  /* right: 10rem;
+  left: 2rem;
+  top: 1rem; */
+  margin: 2rem auto;
+  position: relative;
+  right: 5rem;
+  z-index: 30;
+  object-fit: contain;
+}
+
+@media (max-width: 1267px) {
+  #rest2 {
+    /* background-color: red; */
+  }
+  #icon,
+  #title,
+  #subtitle,
+  #Line_shine,
+  #btn_copy {
+    position: relative;
+    left: -1rem;
+  }
+}
+
+@media (max-width: 1109px) {
+  #rest2 {
+    /* background-color: red; */
+  }
+  #icon,
+  #title,
+  #subtitle,
+  #Line_shine,
+  #btn_copy {
+    position: relative;
+    left: -1rem;
+  }
+}

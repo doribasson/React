@@ -1,0 +1,333 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  background: black;
+  z-index: -1;
+  /* overflow: hidden; */
+  /* color: white;
+  background-size: 100vw 100vh;
+  height: 100vh;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+  object-fit: cover; */
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  background: url("./asset/bk color.png");
+  background-size: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+}
+
+#container1 {
+  background-size: cover;
+  position: absolute;
+  z-index: 2;
+  /* background: black; */
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  /* width: 100%;
+  height: 100vh; */
+  /* object-fit: cover; */
+  display: flex;
+  justify-content: space-between;
+}
+
+#rest1 {
+  /* background: url("./asset/bk color.png"); */
+  position: relative;
+  width: 100%;
+  z-index: 7;
+  /* z-index: 5; */
+}
+
+#human {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -2;
+}
+
+#color1 {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background: url("./asset/bk color.png");
+}
+
+#logo {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  z-index: 3;
+}
+#icon {
+  z-index: 3;
+  opacity: 0.6;
+  object-fit: contain;
+  width: 180px;
+  height: 340px;
+  position: relative;
+  right: 5rem;
+}
+
+#title {
+  z-index: 3;
+  width: 700px;
+  position: relative;
+  left: 6rem;
+}
+
+#subtitle {
+  z-index: 3;
+  position: relative;
+  top: 2rem;
+  /* left: 6rem; */
+}
+
+#Line_shine {
+  z-index: 1;
+  width: 400px;
+}
+
+#btn_copy {
+  z-index: 3;
+  width: 300px;
+}
+
+#icon1 {
+  width: 200px;
+  height: 264px;
+  top: 2rem;
+
+  object-fit: contain;
+  position: relative;
+  /* right: 5rem; */
+  /* background-color: red; */
+  /* width: 100%; */
+  /* top: 2rem; */
+  opacity: 0.6;
+  right: 18rem;
+  z-index: 61;
+}
+
+#rest2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  /* justify-content: space-around; */
+  /* background-color: red; */
+  width: 80%;
+  margin: 0rem auto;
+  /* position: relative;
+  top: 2rem; */
+}
+
+#Line_shine1 {
+  object-fit: contain;
+  z-index: -15;
+  width: 500px;
+  height: 200px;
+  position: relative;
+  right: 6rem;
+  z-index: 2;
+  top: 5rem;
+}
+
+#btn_copy1 {
+  object-fit: contain;
+  position: relative;
+  right: 8rem;
+  z-index: 6;
+  top: 5rem;
+}
+
+#subtitle1 {
+  margin-top: 2rem;
+  width: 610px;
+  height: 90px;
+  /* background-color: red; */
+  text-align: center;
+  /* margin: 0 auto; */
+  z-index: 10;
+  object-fit: contain;
+  position: relative;
+  right: 6rem;
+  top: 5rem;
+}
+
+#title1 {
+  width: 481px;
+  height: 41px;
+  /* right: 10rem;
+  left: 2rem;
+  top: 1rem; */
+  margin: 2rem auto;
+  position: relative;
+  right: 5rem;
+  object-fit: contain;
+  z-index: 30;
+}
+
+#title1 {
+  width: 681px;
+  height: 41px;
+  /* background-color: red; */
+  top: 5rem;
+  /* right: 10rem;
+  left: 2rem;
+  top: 1rem; */
+  right: 3rem;
+  position: relative;
+  object-fit: contain;
+  z-index: 30;
+}
+
+#rest22::after {
+  background: url("./asset/bk color.png");
+  content: "";
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 50;
+}
+
+
+@media (max-width: 1750px) {
+  #title {
+    width: 600px;
+    /* background: red; */
+  }
+  #subtitle {
+    width: 400px;
+    /* background: red; */
+  }
+
+  #icon {
+    position: relative;
+    right: 10rem;
+    width: 170px;
+    /* background: red; */
+  }
+
+  #Line_shine {
+    width:400px;
+  }
+
+  #btn_copy {
+    width:400px;
+  }
+
+  #logo {
+  }
+}
+
+@media (max-width: 1525px) {
+  #title {
+    width: 500px;
+    /* background: red; */
+  }
+  #subtitle {
+    width: 250px;
+    /* background: red; */
+  }
+
+  #icon {
+    position: relative;
+    right: 9rem;
+    width: 150px;
+    /* background: red; */
+  }
+
+  #Line_shine {
+  }
+
+  #btn_copy {
+  }
+
+  #logo {
+  }
+}
+
+@media (max-width: 961px) {
+  #title {
+    width: 300px;
+    /* background: red; */
+  }
+  #subtitle {
+    width: 200px;
+    /* background: red; */
+  }
+
+  #icon {
+    position: relative;
+    right: 9rem;
+    width: 150px;
+    /* background: red; */
+  }
+
+  #Line_shine {
+  }
+
+  #btn_copy {
+  }
+
+  #logo {
+  }
+}
+
+@media (max-width: 810px) {
+  #title {
+    width: 300px;
+    right: 1rem;
+    /* background: blue; */
+  }
+  #subtitle {
+    width: 210px;
+    right: 5rem;
+    /* background: red; */
+  }
+
+  #icon {
+    position: relative;
+    right: 5rem;
+    width: 150px;
+    /* background: red; */
+  }
+
+  #Line_shine {
+  }
+
+  #btn_copy {
+  }
+
+  #logo {
+  }
+}
+@media (max-width: 650px) {
+}
+@media (max-width: 450px) {
+}
+
+/* @media (min-width: 320px) {

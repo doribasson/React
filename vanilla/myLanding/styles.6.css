@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  background-color: black;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+
+  z-index: 1;
+}
+
+#container {
+  background: url("./asset/bk color.png");
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* z-index: 1; */
+}
+
+#humen {
+  position: absolute;
+  z-index: -90;
+  /* object-fit: cover; */
+  /* width: 120%;
+  height: 100%; */
+  width: 100%;
+  height: 100%;
+  left: -3px;
+  /* top: -140px;
+  left: 10rem; */
+}
+
+#rest {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#logo {
+  object-fit: contain;
+  position: relative;
+  left: 2rem;
+  top: 2rem;
+  /* margin-left: 3rem;
+  margin-top: 2rem; */
+}
+
+#icon {
+  /* object-fit: cover; */
+  /* position: relative;
+  right: 15rem;
+  top: 3rem; */
+  /* margin-right: 2rem;
+  margin-top: 6rem; */
+  /* position: absolute;
+  left: 55rem;
+  top: 2rem; */
+  /* object-fit: contain;
+  width: 200px;
+  height: 364px;
+  opacity: 0.7;
+  position: relative;
+  bottom: 5rem; */
+  width: 200px;
+  height: 364px;
+
+  object-fit: contain;
+  position: relative;
+  top: 2rem;
+  opacity: 0.6;
+}
+
+#rest2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  /* position: relative; */
+  /* margin-top: 5rem; */
+}
+
+#titles-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50%;
+  padding: 3rem;
+  margin-top: 0rem;
+  z-index: 80;
+}
+
+#title {
+  /* position: relative;
+  width: 781px;
+  height: 41px;
+  z-index: 5;
+  right: 2rem; */
+  width: 781px;
+  height: 41px;
+  margin: 2rem auto;
+}
+
+#subtitle {
+  /* position: relative;
+  width: 510px;
+  height: 110px;
+  top: 2rem;
+  z-index: 6;
+  right: 2rem; */
+  margin-top: 2rem;
+  width: 510px;
+  height: 110px;
+  text-align: center;
+  /* background-color: red; */
+  margin: 0 auto;
+}
+
+#Line_shine {
+  object-fit: contain;
+  width: 400px;
+  margin-left: 12rem;
+  z-index: 1;
+}
+
+#btn_copy {
+  object-fit: contain;
+}
