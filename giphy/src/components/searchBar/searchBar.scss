@@ -1,0 +1,39 @@
+.search_bar {
+  display: flex;
+  width: 100%;
+  margin: 2rem auto;
+  justify-content: center;
+
+  input {
+    padding: 10px;
+    width: 25%;
+    min-width: 320px;
+    width: calc(33.333333% - 20px);
+    word-spacing: 20px;
+    height: 2rem;
+    border-radius: 25px;
+    font-size: 1.3rem;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  input[type="search"] {
+    letter-spacing: 1px;
+    word-spacing: 1px;
+  }
+
+  button {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    margin-left: 0.2rem;
+    margin-top: 0.2rem;
+    border-radius: 25px;
+    font-weight: 800;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+  }
+}
