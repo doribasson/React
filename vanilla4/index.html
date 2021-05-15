@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>hit Game</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script
+      src="https://kit.fontawesome.com/aa084ac571.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="circle"></div>
+    </div>
+    <button class="reset" onclick="resetFunction()">
+      <strong>Reset</strong>
+    </button>
+
+    <div class="control">
+      <div class="up-down-arrow">
+        <i
+          onclick="clickMoveUp()"
+          class="fas fa-arrow-circle-up fa-3x"
+          style="cursor: pointer;"
+        ></i>
+      </div>
+      <div class="left-right-arrow">
+        <i
+          onclick="clickMoveLeft()"
+          class="fas fa-arrow-circle-left fa-3x"
+          style="cursor: pointer"
+        ></i>
+        <i
+          onclick="clickMoveRight()"
+          class="fas fa-arrow-circle-right fa-3x"
+          style="cursor: pointer"
+        ></i>
+      </div>
+      <div class="up-down-arrow">
+        <i
+          onclick="clickMoveDown()"
+          class="fas fa-arrow-circle-down fa-3x"
+          style="cursor: pointer"
+        ></i>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
