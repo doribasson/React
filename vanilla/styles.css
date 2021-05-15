@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: green;
+}
+
+.container {
+  position: fixed;
+  top: 50%; /*for all page */
+  left: 50%; /*for all page */
+  transform: translate(-50%, -50%); /*fix it to center div */
+  background: red;
+  width: 600px;
+  height: 400px;
+  max-width: 80%; /* make it flex auto not over 80 */
+}
+.p {
+  color: blue;
+}
