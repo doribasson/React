@@ -1,0 +1,22 @@
+
+h1{
+    background-color:rgb(113, 173, 184);
+}
+
+body {
+  height: 100vh; 
+  background: linear-gradient(rgb(47,150,163), rgb(48,62,143));
+      
+}
+
+.bg-dark {
+    background: #333;
+    color: #fff;
+}
+
+.error {
+    background: orangered;
+    color: #fff;
+    padding: 5px;
+    margin: 5px;
+}
