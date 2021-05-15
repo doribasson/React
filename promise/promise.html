@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Document</title>
+
+<body>
+    <p>heyyy</p>
+</body>
+
+<script>
+    console.log("hey")
+    let i = 10;
+    // const promise1 = () => new Promise((resolve, reject) => {
+    const promise1 = new Promise((resolve, reject) => {
+        if (i > 11) {
+            setTimeout(() => {
+                resolve({ name: "promise1" })
+                // console.log("this is promise1");
+            }, 1000)
+        }
+        else {
+            reject({ name: "reject promise1" })
+            // console.log("reject promise1");
+        }
+    })
+
+    promise1.then(message => console.log(message.name)).catch((error) => {
+        console.log(error.name)
+    })
+
+    // async function runPromise() {
+    //     try {
+    //         const res = await promise1(message => console.log(message.name))
+    //     } catch (err) {
+    //         console.log(err.name)
+    //     }
+    // }
+    // runPromise();
+
+    console.log("this console log work before promise1")
+
+    //נשים לב בגלל שזה פרמיס אז הוא מכניס אותו לתור עד שכל התוכנית שעל הסטק שהם הדברים שהם סנכרונים יסתיימו ואז רק יכניס את הפרמיס לסטק ויבצע את הפקודה. מה שקורה בעצם זה שהקוד שהוא סנכרוני יתבצע כולו בתכנית ורק שכל הקוד הסנכרוני יסתיים ויתבצע אז יעברו לקוד שהוא אסנכרוני שהוא הפרמיס פה. דברים שהם אסנכרונים למשל זה כתיבה לקובץ..איבנט ליסטנר..שינוי של סטייט בריאקט..פאצ בקשה ללשרת.. אובזרוובל שזה להזרים נתונים ברגע שמשתנה משהו..סייט  טיימהאוט..סט אינטרבל.. כל אלה הם פעולות קוד אסנכרוניות  ולכן יכנסו ל וואבאיפיאי וברגע שיתרחש משהו כמו לחיצה או בקשה לשרת או שהטיימר יסתיים רק אז יעברו לתור וכל זה קורה מאחורי הקלעים ובמקביל הסטק עובד רגיל עובר שורה שורה ומריץ וברגע שכל הקוד הסנכרוני הסתיים אז מעביר איבנט איבנט מהתור לסטק ומבצע את הפעולה אחד אחרי השני. רק הסטק בעצם הוא זה שמבצע ומממש את הפקודות.
+
+    //פרמיס תמיד יחזיר ערך אחד שזה ריסולב או ריג'קט .. אם נעבוד עם אובזרוובל שזה מזרים נתונים אז נוכל להעביר יותר מערך אחד.
+
+</script>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Document</title>
+
+<body>
+    <p>heyyy</p>
+</body>
+
+<!-- <script>
+    console.log("hey")
+    let i = 0;
+    for (/* let  i = 0 */ i; i < 10; i++) {
+        setTimeout(() => {
+            console.log("this is i:", i);
+        }, 0)
+    }
+    console.log("this is i:", i);
+    console.log("its happen before console.log i in setTimeout but in the code its after")
+</script> -->
+
+<script>
+    console.log("hey")
+    for (let i = 0; i < 10; i++) {
+        setDelay(i);
+    }
+    function setDelay(i) {
+        setTimeout(() => {
+            console.log("this is i:", i);
+        }, 2000)
+    }
+    console.log("its happen before console.log i in setTimeout but in the code its after")
+
+</script>
+
+</html>
