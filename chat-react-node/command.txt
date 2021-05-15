@@ -1,0 +1,48 @@
+add folder chat-react-node to workspace
+in the terminal - mkdir client and mkdir server ... make 2 folder 
+in the client folder in the terminal - npx create-react-app ./   ...make react app on this folder
+in the package.json in the client add "proxy": "http://localhost:8000",    before or after the dependencies
+npm i socket.io-client or version 2.3.0 npm i socket.io-client@2.3.0
+npm i styled-components  if we want....
+
+
+go to the server folder ..cd cd server ... and then ..  npm init -y
+then install ..npm i express 
+then install the socket.io ... npm i socket.io  or version 2.3.0 npm i socket.io@2.3.0
+npm i --save-dev nodemon  ...do the change refresh after save..
+make file server.js ... touch index.js
+in the package.json on the server folder go to script and change the "test"... to "devStart":"nodemon server.js"
+
+
+
+
+
+
+
+    setChat(oldChat => ({ ...oldChat, [e.target.name]: e.target.value }));  לאובייקט
+
+      setChat(oldChat => ({ ...oldChat, id: id })); לאובייקט
+
+    setMessages(oldMsgs => [...oldMsgs, message]); למערך
+    
+setChat(oldChat => ({                לאובייקט שבתוכו יש מערך ונרצה לשנות גם את המערך וגם עוד תכונה
+      ...oldChat,
+      messages: [...oldChat.messages, messageObject.message],
+      id: messageObject.id
+    }));
+
+
+
+    socketRef.current = io.connect("/"); הסלש זה בגלל פרוקסי בפקגגיסון בקליינט עשינו שיפנה לולקלהוסט  8000 
+
+
+    socketRef.current.emit("send message", messageObject);  שולח לצד השני על ידי הסטרינג מהקליט לסרבר או מהסרבר לקליינט
+
+
+    socketRef.current.on("message", messageObject => {   מאזין לפי הסטרינג שמתקבל מהצד השני שזה קליינט אן סרבר  היכן שיש אמיט עם אותו סטירנג מסאאג
+      console.log("here");
+      receivedMessage(messageObject);
+    });
+
+
+
